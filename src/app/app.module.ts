@@ -14,6 +14,10 @@ import {ChartModule} from 'primeng/chart';
 import { DonaComponent } from './grafic/dona/dona.component';
 import { HomeComponent } from './home/home.component';
 import { NopageComponent } from './nopage/nopage.component';
+import { PdfComponent } from './docs/pdf/pdf.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SafePipe } from './pipes/safe.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,9 @@ import { NopageComponent } from './nopage/nopage.component';
     BarComponent,
     DonaComponent,
     HomeComponent,
-    NopageComponent
+    NopageComponent,
+    PdfComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
@@ -30,6 +36,7 @@ import { NopageComponent } from './nopage/nopage.component';
     ButtonModule,
     RippleModule,
     ChartModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

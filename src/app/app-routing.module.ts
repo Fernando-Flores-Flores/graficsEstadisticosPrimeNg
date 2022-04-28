@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DonaComponent } from './grafic/dona/dona.component';
 import { HomeComponent } from './home/home.component';
 import { NopageComponent } from './nopage/nopage.component';
+import { PdfComponent } from './docs/pdf/pdf.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'pruebas',
     component: PruebasComponent,
+  },
+  {
+    path: 'pdf',
+    component: PdfComponent,
   },
   {
     path: '',
